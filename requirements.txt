@@ -1,0 +1,2 @@
+pbr
+beautifulsoup4==4.9.1
