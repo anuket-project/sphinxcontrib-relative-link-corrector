@@ -25,4 +25,4 @@ Please feel free to create a pr for code contributions or an issue for issues.
 License
 -------
 
-Licensed with Apache License 2.0 License, see the `LICESE <LICENSE>`_ file.  
+Licensed with Apache License 2.0 License, see the `LICENSE <LICENSE>`_ file.  
