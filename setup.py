@@ -3,12 +3,6 @@
 # Licensed under the Apache License 2.0.
 # SPDX-License-Identifier: Apache-2.0
 
-
-import setuptools
-
-
-
-#!/usr/bin/env python
 import os
 from setuptools import setup
 
@@ -24,27 +18,22 @@ def slurp(filename):
 
 setup(
     name                 = "sphinxcontrib.relative-link-corrector",
-    version              = "0.0.1",
+    version              = "0.0.2",
     packages             = ["sphinxcontrib", "sphinxcontrib.relative-link-corrector"],
     namespace_packages   = ["sphinxcontrib"],
     package_dir          = {'': "src"},
     author               = "Gergely Csatari",
     author_email         = "gergely.csatari@nokia.com",
     license              = "Apache License 2.0",
-    url                  = "https://github.com/CNTT",
+    url                  = "https://github.com/cntt-n/sphinxcontrib-relative-link-corrector",
     keywords             = ["helpers"],
-    requires             = ["six"],
+    install_requires     = ["beautifulsoup4"],
+    long_description_content_type = "text/x-rst",
     description          = ("Corrects relative links when generating documents  "
                             "from .md to .html with commonmark"),
     long_description     = slurp("README.rst"),
-    classifiers          = ["Programming Language :: Python",
-                            "Programming Language :: Python :: 2.6",
-                            "Programming Language :: Python :: 2.7",
-                            "Programming Language :: Python :: 3.3",
-                            "Programming Language :: Python :: 3.4",
-                            "Programming Language :: Python :: 3.5",
-                            "Programming Language :: Python :: 3.7",
-                            "Development Status :: 2 - Pre-Alpha",
+    classifiers          = ["Programming Language :: Python :: 3",
+                            "Development Status :: 4 - Beta",
                             "Topic :: Documentation",
                             "Intended Audience :: Developers",
                             "License :: OSI Approved :: Apache Software License",
