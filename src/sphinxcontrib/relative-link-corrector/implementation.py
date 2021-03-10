@@ -14,8 +14,12 @@
 # https://github.com/firegurafiku/sphinxcontrib-divparams/
 ###
 
+import sphinx
 from sphinx.util import logging
-from sphinx.environment import NoUri
+if sphinx.version_info [:2] < (3, 1):
+    from sphinx.environment import NoUri
+else:
+    from sphinx.errors import NoUri
 
 import bs4
 import shutil

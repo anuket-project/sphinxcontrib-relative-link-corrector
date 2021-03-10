@@ -34,7 +34,7 @@ def get_version(rel_path):
 
 setup(
     name                 = "sphinxcontrib.relative-link-corrector",
-    version              = "0.0.3",
+    version              = "0.0.4",
     packages             = ["sphinxcontrib", "sphinxcontrib.relative-link-corrector"],
     namespace_packages   = ["sphinxcontrib"],
     package_dir          = {'': "src"},
