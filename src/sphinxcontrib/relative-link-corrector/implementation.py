@@ -16,17 +16,19 @@
 
 import sphinx
 from sphinx.util import logging
-if sphinx.version_info [:2] < (3, 1):
-    from sphinx.environment import NoUri
-else:
-    from sphinx.errors import NoUri
-
 import bs4
 import shutil
 import os
 import re
 
 logger = logging.getLogger(__name__)
+
+# NoUri was moved in 3.0 https://www.sphinx-doc.org/en/master/extdev/deprecated.html#dev-deprecated-apis
+
+if sphinx.version_info [:2] < (3, 0):
+    from sphinx.environment import NoUri
+else:
+    from sphinx.errors import NoUri
 
 def transform_html(soup):
     links = soup.find_all("a")
