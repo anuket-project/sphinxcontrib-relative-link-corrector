@@ -1,6 +1,8 @@
-=====================================
-sphinxcontrib-relative-link-corrector
-=====================================
+==============================================
+Archived: sphinxcontrib-relative-link-corrector
+===============================================
+
+This project is archived and no longer used. 
 
 A Sphinx extension to correct relative links when using .md as an input.
 
